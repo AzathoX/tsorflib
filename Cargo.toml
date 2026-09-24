@@ -1,0 +1,26 @@
+[package]
+name = "tsorfib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.53.1",features = ["macros", "rt-multi-thread", "net"]  }
+quinn = "0.11.11"
+sqlx = { version = "0.8.2", features = ["postgres", "runtime-tokio-native-tls"]  }
+redis = "1"
+axum = "0.7.9"
+serde = { version = "1.0.216", features = ["derive"] }
+dotenv = "0.15"
+log = "0.4"
+fern = "0.6"
+http = "1"
+tower-http = { version = "0.4", features = ["cors","trace"] }
+r2d2 = "0.8.10"
+r2d2_redis = "0.14.0"
+h3-quinn = "0.0.10"
+h3 = "0.0.8"
+boringtun = { version = "0.7.1", features = ["device"] }
+base64 = "0.22"
+x25519-dalek = "2"
+hex = "0.4.3"
+
